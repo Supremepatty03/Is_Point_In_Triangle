@@ -12,10 +12,10 @@ C:\C#\obj\Debug\Lab1_c#.csproj.AssemblyReference.cache
 C:\C#\obj\Debug\Lab1_c#.csproj.CoreCompileInputs.cache
 C:\C#\obj\Debug\Lab1_c#.exe
 C:\C#\obj\Debug\Lab1_c#.pdb
+C:\C#\Lab1\bin\Debug\Lab1_c#.exe.config
+C:\C#\Lab1\bin\Debug\Lab1_c#.exe
 C:\C#\Lab1\bin\Debug\Lab1_c#.pdb
 C:\C#\Lab1\obj\Debug\Lab1_c#.csproj.AssemblyReference.cache
 C:\C#\Lab1\obj\Debug\Lab1_c#.csproj.CoreCompileInputs.cache
-C:\C#\Lab1\obj\Debug\Lab1_c#.pdb
-C:\C#\Lab1\bin\Debug\Lab1_c#.exe.config
-C:\C#\Lab1\bin\Debug\Lab1_c#.exe
 C:\C#\Lab1\obj\Debug\Lab1_c#.exe
+C:\C#\Lab1\obj\Debug\Lab1_c#.pdb
