@@ -44,10 +44,8 @@ namespace Lab1_c_
                     Point.ShowInfo("исследования");
                 }
 
-
-                TriangleCheker cheсker = new TriangleCheker();
-
-                Triangle triangle = new Triangle(A, B, C, cheсker);
+                Triangle triangle = new Triangle(A, B, C, new TriangleCheker());
+                if (!triangle.CorrectTriangle()) { continue; }
 
                 bool IsInside = triangle.Contains(Point);
 

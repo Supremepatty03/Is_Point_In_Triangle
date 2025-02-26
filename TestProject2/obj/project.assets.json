@@ -1629,23 +1629,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Вячеслав\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "D:\\ms vs x86\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#\\Lab1\\TestProject2\\TestProject2.csproj",
+      "projectUniqueName": "D:\\CSharp\\Lab1\\TestProject2\\TestProject2.csproj",
       "projectName": "TestProject2",
-      "projectPath": "C:\\C#\\Lab1\\TestProject2\\TestProject2.csproj",
-      "packagesPath": "C:\\Users\\Вячеслав\\.nuget\\packages\\",
-      "outputPath": "C:\\C#\\Lab1\\TestProject2\\obj\\",
+      "projectPath": "D:\\CSharp\\Lab1\\TestProject2\\TestProject2.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\CSharp\\Lab1\\TestProject2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\ms vs x86\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Вячеслав\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1661,8 +1661,8 @@
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {
-            "C:\\C#\\Lab1\\Lab1_c#.csproj": {
-              "projectPath": "C:\\C#\\Lab1\\Lab1_c#.csproj"
+            "D:\\CSharp\\Lab1\\Lab1_c#.csproj": {
+              "projectPath": "D:\\CSharp\\Lab1\\Lab1_c#.csproj"
             }
           }
         }

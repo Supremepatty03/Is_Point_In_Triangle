@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = TestProject2
-build_property.ProjectDir = C:\C#\Lab1\TestProject2\
+build_property.ProjectDir = D:\CSharp\Lab1\TestProject2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

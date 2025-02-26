@@ -19,3 +19,10 @@ C:\C#\Lab1\obj\Debug\Lab1_c#.csproj.AssemblyReference.cache
 C:\C#\Lab1\obj\Debug\Lab1_c#.csproj.CoreCompileInputs.cache
 C:\C#\Lab1\obj\Debug\Lab1_c#.exe
 C:\C#\Lab1\obj\Debug\Lab1_c#.pdb
+D:\CSharp\Lab1\bin\Debug\Lab1_c#.exe.config
+D:\CSharp\Lab1\bin\Debug\Lab1_c#.exe
+D:\CSharp\Lab1\bin\Debug\Lab1_c#.pdb
+D:\CSharp\Lab1\obj\Debug\Lab1_c#.csproj.AssemblyReference.cache
+D:\CSharp\Lab1\obj\Debug\Lab1_c#.csproj.CoreCompileInputs.cache
+D:\CSharp\Lab1\obj\Debug\Lab1_c#.exe
+D:\CSharp\Lab1\obj\Debug\Lab1_c#.pdb
