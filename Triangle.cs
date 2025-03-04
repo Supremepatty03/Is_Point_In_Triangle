@@ -26,7 +26,12 @@ namespace Lab1_c_
             Console.WriteLine($"Координаты точки {PointName}:\n x = {x}\n y = {y}");
         }
     }
-    public class Triangle
+    public interface GeometryObject
+    {
+        bool Contains(Point2D point);
+        bool CorrectObject();
+    }
+    public class Triangle : GeometryObject
     {
         public Point2D A { get; }
         public Point2D B { get; }
@@ -46,7 +51,7 @@ namespace Lab1_c_
         {
             return checker.Check(point, this);
         }
-        public bool CorrectTriangle()
+        public bool CorrectObject()
         {
             try
             {

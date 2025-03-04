@@ -45,7 +45,7 @@ namespace Lab1_c_
                 }
 
                 Triangle triangle = new Triangle(A, B, C, new TriangleCheker());
-                if (!triangle.CorrectTriangle()) { continue; }
+                if (!triangle.CorrectObject()) { continue; }
 
                 bool IsInside = triangle.Contains(Point);
 

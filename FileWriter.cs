@@ -10,9 +10,9 @@ namespace Lab1_c_
     public interface IFileWriter
     {
         void WriteDataToFile(ref string filePath, string[] data);
-        void WriteResultToFile(ref string filePath, string result);
+        void WriteResultToFile(ref string filePath, string result, string[] data);
         int WhatToDoWithData(string filePath);
-        bool ContainsInvalidPathChars(string filePath);
+        void EnsureFileNDirectoryExists(ref string filePath);
 
     }
     public class FileWriter : IFileWriter
@@ -32,7 +32,7 @@ namespace Lab1_c_
 
             return filePath.Any(ch => invalidPathChars.Contains(ch)) || fileName.Any(ch => invalidFileNameChars.Contains(ch));
         }
-        private void EnsureFileNDirectoryExists(ref string filePath)
+        public void EnsureFileNDirectoryExists(ref string filePath)
         {
             while (ContainsInvalidPathChars(filePath))
             {
@@ -87,25 +87,23 @@ namespace Lab1_c_
         {
             AdditionalInfo.SaveToFile();
             bool flag = true;
-            while (flag) { 
+            while (flag) {
                 int choice = InputHandler.GetInput<int>(" - ");
                 string filepath;
-                
+
                 switch (choice)
                 {
                     case (int)SaveOptions.ONLY_INPUT:
                         Console.Write(" Введите путь сохранения файла: ");
                         filepath = Console.ReadLine();
-                        //ApplyingChoice(filepath, choice, data);
                         WriteDataToFile(ref filepath, data);
                         flag = false;
-                        
+
                         break;
                     case (int)SaveOptions.RESULT:
                         Console.Write(" Введите путь сохранения файла: ");
                         filepath = Console.ReadLine();
-                        //ApplyingChoice(filepath, choice, data);
-                        WriteResultToFile(ref filepath, result);
+                        WriteResultToFile(ref filepath, result, data);
                         flag = false;
                         break;
                     case (int)SaveOptions.NO_SAVE:
@@ -118,36 +116,8 @@ namespace Lab1_c_
                 }
             }
         }
-        public void WriteDataToFile(ref string filePath, string[] data)
+        private void PrepareFilePath(ref string filePath)
         {
-            bool flag = true;
-            while (flag)
-            {
-                try { 
-                    EnsureFileNDirectoryExists(ref filePath);
-                    flag = false;
-                }  
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Ошибка: {ex.Message}");
-                    Console.Write(" Введите путь еще раз: ");
-                    filePath = Console.ReadLine();
-                }
-                
-            }
-            if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
-            {
-                int choice = WhatToDoWithData(filePath);
-                ApplyingChoice(filePath, choice, data);
-                return;
-            }
-            File.WriteAllLines(filePath, data);
-            Console.WriteLine(" Данные успешно сохранены");
-        }
-
-        public void WriteResultToFile(ref string filePath, string result)
-        {
-            string[] converted = new string[] { result };
             bool flag = true;
             while (flag)
             {
@@ -162,15 +132,36 @@ namespace Lab1_c_
                     Console.Write(" Введите путь еще раз: ");
                     filePath = Console.ReadLine();
                 }
-
             }
+        }
+        public void WriteDataToFile(ref string filePath, string[] data)
+        {
+            PrepareFilePath(ref filePath);
+
             if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
             {
                 int choice = WhatToDoWithData(filePath);
-                ApplyingChoice(filePath, choice, converted);
+                ApplyingChoice(filePath, choice, data);
+                return;
             }
-            File.WriteAllText(filePath, result);
+
+            File.WriteAllLines(filePath, data);
             Console.WriteLine(" Данные успешно сохранены");
         }
-    }
+
+        public void WriteResultToFile(ref string filePath, string result, string[] data)
+        {
+            PrepareFilePath(ref filePath);
+            string[] combinedData = data.Append(result).ToArray();
+            if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
+            {
+                int choice = WhatToDoWithData(filePath);
+                ApplyingChoice(filePath, choice, combinedData);
+                return;
+            }
+
+            File.WriteAllLines(filePath, combinedData);
+            Console.WriteLine(" Данные успешно сохранены");
+        }
+    } 
 }

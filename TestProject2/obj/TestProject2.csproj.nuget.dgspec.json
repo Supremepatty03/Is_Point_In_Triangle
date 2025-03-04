@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CSharp\\Lab1\\TestProject2\\TestProject2.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\TestProject2\\TestProject2.csproj": {}
   },
   "projects": {
-    "D:\\CSharp\\Lab1\\Lab1_c#.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\Lab1_c#.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\CSharp\\Lab1\\Lab1_c#.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\Lab1_c#.csproj",
         "projectName": "Lab1_c#",
-        "projectPath": "D:\\CSharp\\Lab1\\Lab1_c#.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\Lab1_c#.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
@@ -20,14 +20,14 @@
         "net472": {}
       }
     },
-    "D:\\CSharp\\Lab1\\TestProject2\\TestProject2.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\TestProject2\\TestProject2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSharp\\Lab1\\TestProject2\\TestProject2.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\TestProject2\\TestProject2.csproj",
         "projectName": "TestProject2",
-        "projectPath": "D:\\CSharp\\Lab1\\TestProject2\\TestProject2.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\TestProject2\\TestProject2.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\CSharp\\Lab1\\TestProject2\\obj\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\TestProject2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\ms vs x86\\NuGetPackages"
@@ -49,8 +49,8 @@
           "net472": {
             "targetAlias": "net472",
             "projectReferences": {
-              "D:\\CSharp\\Lab1\\Lab1_c#.csproj": {
-                "projectPath": "D:\\CSharp\\Lab1\\Lab1_c#.csproj"
+              "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\Lab1_c#.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\Is_Point_In_Triangle\\Lab1_c#.csproj"
               }
             }
           }
